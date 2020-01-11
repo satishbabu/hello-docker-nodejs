@@ -1,7 +1,7 @@
-#NodeJs app Docker locally on Windows 10 Home edition
+# NodeJs app Docker locally on Windows 10 Home edition
 
 
-##Setup:
+## Setup:
 1. Installed virutalbox
 2. Downloaded minikube.exe and ran it from cmd line - `minikube start --vm-driver=virtualbox`.  It downloads and installs the required VM.
 3. Download Docker desktop for Windows.  It was a zip file name docker-17.09.0-ce.zip.  I extracted only Docker.exe for my purpose.
