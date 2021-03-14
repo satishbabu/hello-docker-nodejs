@@ -70,3 +70,15 @@ Visit localhost:31828.  Note that the port will be different and it is obtained 
 `kubectl exec <pod> command`  - Execute a command on the pod
 
 
+# Kubernets - scalaing
+
+Use kind: ReplicationController  and provide replicas: n to create n number of pods
+
+`kubectl create -f helloworld-repl-controller.yml`
+
+`kubectl get replicationController`  or `kubectl get rc`
+`kubectl scale --replicas=4 rc/helloworld-controller`
+
+
+Delete the replication controller by
+`kubectl delete rc/helloworld-controller`
