@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-docker-node
+  labels:
+    app: hello-docker
+spec:
+  containers:
+  - name: hello-k8s-demo
+    image: hello-docker-node
+    imagePullPolicy: Never
+    ports:
+    - name: nodejs-port
+      containerPort: 3000
